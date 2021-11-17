@@ -1,0 +1,154 @@
+/*body{
+  background-color: black;
+}*/
+.inline-block{
+    display:inline-block;
+    vertical-align:top;
+}
+div.logo{
+width:20%;
+padding:1%;
+}
+nav{
+    width:73%;
+    padding:1%;
+  }
+  ul{
+    width:40%;
+    margin-left:auto;
+    color:grey;
+    
+  }
+  .logo{
+    text-align:center;
+  }
+  .heroImg{
+    height:600px;
+    padding:25px;
+  }
+  .content{
+    width:500px;
+    margin:0 auto;
+    padding:1px;
+    text-align: center;
+  }
+  footer{
+    background-color:rgba(33, 33, 33, 1);
+    padding: 1%;
+    width: auto;
+    color:white;
+  }
+  footer.ul{
+    display:inline-block;
+    vertical-align:top;
+    padding:1%;
+
+  }
+  footer img{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    
+  }
+  .navigation{
+    display: flex;
+    justify-content: space-between;
+  }
+
+ 
+  .content img{
+    float:left ;
+    margin-right: 1px;
+    width:253;
+    height:300;
+  }
+
+.text-block1{
+  display:flex;
+  width:auto;
+  margin-right:0px;
+  margin-left: 0px;
+  padding-top:10px;
+  justify-content:center;
+}
+.text-block11{
+  font-family: sans-serif;
+  color:white;
+  font-size:40px;
+}
+.text-block12{
+  margin-left:15px;
+  font-family: sans-serif;
+  color:grey;
+  font-size:40px;
+}
+.text-block2{
+  display:flex;
+  padding-top:1px;
+  justify-content:center;
+}
+.text-block21{
+  font-family: sans-serif;
+  color:grey;
+  font-size:40px;
+}
+.text-block22{
+  margin-left:15px;
+  font-family: sans-serif;
+  color:white;
+  font-size:40px;
+}
+.text-block3{
+  display:flex;
+  margin-top:1px;
+  justify-content:center;
+}
+.text-block31{
+  font-family: sans-serif;
+  color:grey;
+  font-size:21px;
+  font-weight:300;
+}
+img{
+  width:103;
+  height:83;
+
+}
+
+.flexContainer{
+  display:flex;
+  width:33%;
+  flex-direction: row;
+
+}
+
+.workGrid{
+  display:grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 200px 200px;
+  grid-template-areas: 'proj1' 'proj2';
+  text-align: center;
+  padding: 20px 0;
+}
+.project1{
+  grid-area: proj1;
+}
+.project2{
+  grid-area: proj2;
+}
+
+
+/*-------MOBILE QUERY-------*/
+@media only screen and (max-width:600){
+  .flexContainer{
+    flex-direction: column;
+    width: 100%;
+  }
+  .workGrid{
+    grid-template-rows: 300px 300px 300px 
+    300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'proj1' 'proj2';
+    
+  }
+}
